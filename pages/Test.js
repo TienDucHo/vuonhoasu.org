@@ -8,11 +8,9 @@ export default function Test() {
       <h3>Đây là h3</h3>
       <h4>Đây là h4</h4>
       <h5>Đây là h5</h5>
-      <body>
-        <p>Đây là body.</p>
-        <small>Đây là small (hoặc smaller)</small>
-        <details>Đây là details</details>
-      </body>
+      Đây là body.<br/>
+      <small>Đây là small (hoặc smallest)</small>
+      <details>Đây là details</details>
     </div>
   )
 }

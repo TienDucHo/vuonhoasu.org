@@ -1,10 +1,62 @@
 @use "../styles/variables" as variables;
 @use "./mixins" as mixins;
 
+@import url('https://fonts.googleapis.com/css2?family=Lora'); // Font Lora
+@import url('https://fonts.googleapis.com/css2?family=Poppins'); // Font Poppins
+
+// Note: Font weight - https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
+// Note: Ask about bold and bolder
+
+h1 { // Lora 32px bold
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h2 { // Lora 28px bold
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 28px;
+}
+
+h3 { // Lora 24px bold
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h4 { // Lora 24px semi-bold
+  font-family: "Lora";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+h5 { // Lora 16px semi-bold
+  font-family: "Lora";
+  font-weight: 600;
+  font-size: 16px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+small { // Note: Ask about smallest
+  font-family: "Lora";
+  font-weight: 600;
+  font-size: 12px;
+}
+
+details {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
 }
 
 a {

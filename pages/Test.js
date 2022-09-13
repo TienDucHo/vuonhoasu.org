@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/theme/footer'
 
 export default function Test() {
   return (
@@ -11,6 +12,7 @@ export default function Test() {
       Đây là body.<br/>
       <small>Đây là small (hoặc smallest)</small>
       <details>Đây là details</details>
+      <Footer />
     </div>
   )
 }

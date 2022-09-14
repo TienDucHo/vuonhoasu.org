@@ -15,5 +15,35 @@
 
     .title {
         color: variables.$accent;
+        margin: 6px; // nullify margin of heading
+    }
+
+    .iconContainer {
+        display: flex;
+
+        .icon {
+            margin: 6px;
+            position: relative;
+    
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .mainText {
+        font-weight: 400;
+        margin-top: 6px;
+        margin-bottom: 18px;
+        margin-left: 65px;
+        margin-right: 65px;
+
+        @media screen and (max-width: 390px) {
+            text-align: justify;
+        }
+    }
+
+    .subText {
+        font-weight: 400;
+        margin-top: 18px;
     }
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import styles from './Navbar.module.scss'
 
@@ -9,6 +9,8 @@ const menuSection = [
 ];
 
 export default function Navbar() {
+  const [clicked, useClicked] = useState(false);
+
   return (
     <div className={styles.header}>
         {/* Left section aka logo (Page's name, does it count as logo?)*/}

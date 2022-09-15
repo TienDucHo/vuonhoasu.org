@@ -1,8 +1,7 @@
-@use "../styles/variables" as variables;
-@use "./mixins" as mixins;
+@use "/styles/variables" as variables;
+@use "/styles/variables" as mixins;
 
 @import url('https://fonts.googleapis.com/css2?family=Lora'); // Font Lora
-@import url('https://fonts.googleapis.com/css2?family=Poppins'); // Font Poppins
 
 // Note: Font weight - https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
 // Note: Ask about bold and bolder
@@ -42,7 +41,7 @@ body {
   padding: 0;
   margin: 0;
 
-  font-family: "Poppins";
+  font-family: "Lora";
   font-weight: 400;
   font-size: 16px;
 }
@@ -54,7 +53,7 @@ small { // Note: Ask about smallest
 }
 
 details {
-  font-family: "Poppins";
+  font-family: "Lora";
   font-weight: 400;
   font-size: 14px;
 }

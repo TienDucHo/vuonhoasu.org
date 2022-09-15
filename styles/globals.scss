@@ -18,31 +18,38 @@ a {
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Header, body, smallest and details styling
-.header { // Lora 32px bold
+.header {
+  // Lora 32px bold
   @include mixins.fastLoraFont(700, 32px);
 }
 
-.subHeader { // Lora 28px bold
+.subHeader {
+  // Lora 28px bold
   @include mixins.fastLoraFont(700, 28px);
 }
 
-.subHeader2 { // Lora 24px bold
+.subHeader2 {
+  // Lora 24px bold
   @include mixins.fastLoraFont(700, 24px);
 }
 
-.subHeader3 { // Lora 24px semi-bold
+.subHeader3 {
+  // Lora 24px semi-bold
   @include mixins.fastLoraFont(600, 20px);
 }
 
-.subHeader4 {// Lora 16px semi-bold
+.subHeader4 {
+  // Lora 16px semi-bold
   @include mixins.fastLoraFont(600, 16px);
 }
 
-.body { // Lora 16px regular
+.body {
+  // Lora 16px regular
   @include mixins.fastLoraFont(400, 16px);
 }
 
-.smallest { // Lora 12px regular
+.smallest {
+  // Lora 12px regular
   @include mixins.fastLoraFont(400, 12px);
 }
 

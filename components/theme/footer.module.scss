@@ -14,7 +14,7 @@
     color: white;
 
     .title {
-        color: variables.$accent;
+        color: variables.$accent-g;
         margin: 6px; // nullify margin of heading
     }
 
@@ -36,10 +36,6 @@
         margin-bottom: 18px;
         margin-left: 65px;
         margin-right: 65px;
-
-        @media screen and (max-width: 390px) {
-            text-align: justify;
-        }
     }
 
     .subText {

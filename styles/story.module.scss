@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+
+.container {
+    .heroImg {
+        width: 100%;
+        height: 300px;
+        background: url("/images/hero.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    font-family: 'Lora';
+    .titleContainer {
+        text-align: center;
+        h2 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            color: #000000;
+        }
+        h1 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 41px;
+            color: #FBC846;
+        }
+        h3 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+        }
+    }
+    article {
+        padding: 50px 5% 50px 10%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        .heroImg {
+            height: 700px;
+        }
+        .titleContainer {
+            h2 {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 61px;
+            }
+            h1 {
+                font-weight: 700;
+                font-size: 72px;
+                line-height: 92px;
+            }
+            h3 {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 41px;
+            }
+        }
+        article {
+            padding: 90px 10% 90px 15%;
+        }
+    }
+}

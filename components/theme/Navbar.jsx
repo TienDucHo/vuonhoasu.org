@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
+import Image from 'next/image';
 
 import styles from './Navbar.module.scss'
 
@@ -9,18 +10,49 @@ const menuSection = [
 ];
 
 export default function Navbar() {
-  const [clicked, useClicked] = useState(false);
+  const [clicked, setClicked] = useState(false);
+
+  function handleClick(e) {
+    setClicked(!clicked);
+  }
+
+  let dropdown = useRef();
+
+  // Close navBar if click outside
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (!dropdown.current?.contains(e.target)) setClicked(false);
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+  })
 
   return (
     <div className={styles.header}>
+        {/* Navbar on phone */}
+        {
+          clicked && 
+          <div className={styles.navBarPhone} ref={dropdown}>
+            <h3 className={styles.title}>Vườn hoa sứ</h3>
+            {menuSection.map(section => <h5 className={styles.item} key={section.id}>{section.context}</h5>)}
+          </div>
+        }
         {/* Left section aka logo (Page's name, does it count as logo?)*/}
         <h3 className={styles.left}>
-            Vườn hoa sứ
+          Vườn hoa sứ
         </h3>
         {/* Right section */}
-        <h5 className={styles.right}>
-            {menuSection.map(section => <div key={section.id} className={styles.rightItem}>{section.context}</div>)}
-        </h5>
+        <div className={styles.right}>
+            {menuSection.map(section => <h5 key={section.id} className={styles.rightItem}>{section.context}</h5>)}
+            <button type='button' className={styles.rightItemPhone} onClick={e => handleClick(e)}>
+              <Image src='/icons/Bars.svg' alt='button' layout='fill' objectFit='contain'/>
+            </button>
+        </div>
+        {/* {clicked ? 'true' : 'false'} */}
     </div>
   )
 }

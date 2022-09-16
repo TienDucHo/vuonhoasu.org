@@ -1,16 +1,16 @@
-import Footer from '../components/theme/Footer'
-import '../styles/globals.scss'
+import Footer from "../components/theme/Footer";
+import "../styles/globals.scss";
 
-import Navbar from '../components/theme/Navbar'
+import Navbar from "../components/theme/Navbar";
 
 function MyApp({ Component, pageProps }) {
-  return(
+  return (
     <div>
       <Navbar />
       <Component {...pageProps} />
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

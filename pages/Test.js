@@ -12,7 +12,6 @@ export default function Test() {
       Đây là body.<br/>
       <small>Đây là small (hoặc smallest)</small>
       <details>Đây là details</details>
-      <Footer />
     </div>
   )
 }

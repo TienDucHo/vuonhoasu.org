@@ -4,7 +4,6 @@ import Navbar from '../components/theme/Navbar'
 export default function Test() {
   return (
     <div>
-      <Navbar />
       <h1>Đây là h1</h1>
       <h2>Đây là h2</h2>
       <h3>Đây là h3</h3>

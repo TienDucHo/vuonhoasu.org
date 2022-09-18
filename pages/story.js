@@ -1,9 +1,18 @@
 import styles from "../styles/story.module.scss"
+import Image from 'next/image'
 
 export default function Story() {
     return (
         <div className={styles.container}>
-            <div className={styles.heroImg}></div>
+            <div className={styles.heroImg}>
+                <Image 
+                    src="/images/hero.jpg"
+                    width={1920}
+                    height={700}
+                    layout="responsive"
+                    objectFit="cover"
+                />
+            </div>
             <div className={styles.titleContainer}>
                 <h2>Chiến Binh Hoa Sứ 2017</h2>
                 <h1>Lễ Đón Học Sinh Mới</h1>

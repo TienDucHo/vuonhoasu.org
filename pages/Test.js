@@ -3,7 +3,7 @@ import React from 'react'
 export default function Test() {
   return (
     <div>
-      <h1>Đây là h1</h1>
+      <h1 className='header'>Đây là h1</h1>
       <h2>Đây là h2</h2>
       <h3>Đây là h3</h3>
       <h4>Đây là h4</h4>

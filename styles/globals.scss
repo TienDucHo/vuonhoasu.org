@@ -1,39 +1,29 @@
 @use "/styles/variables" as variables;
-@use "/styles/variables" as mixins;
+@use "/styles/mixins" as mixins;
 
 @import url('https://fonts.googleapis.com/css2?family=Lora'); // Font Lora
 
 // Note: Font weight - https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
 // Note: Ask about bold and bolder
 
-h1 { // Lora 32px bold
-  font-family: "Lora";
-  font-weight: 700;
-  font-size: 32px;
+.header { // Lora 32px bold
+  @include mixins.fastLoraFont(700, 32px);
 }
 
-h2 { // Lora 28px bold
-  font-family: "Lora";
-  font-weight: 700;
-  font-size: 28px;
+.sub-header { // Lora 28px bold
+  @include mixins.fastLoraFont(700, 28px);
 }
 
-h3 { // Lora 24px bold
-  font-family: "Lora";
-  font-weight: 700;
-  font-size: 24px;
+.sub-header-2 { // Lora 24px bold
+  @include mixins.fastLoraFont(700, 24px);
 }
 
-h4 { // Lora 24px semi-bold
-  font-family: "Lora";
-  font-weight: 600;
-  font-size: 20px;
+.sub-header-3 { // Lora 24px semi-bold
+  @include mixins.fastLoraFont(600, 20px);
 }
 
-h5 { // Lora 16px semi-bold
-  font-family: "Lora";
-  font-weight: 600;
-  font-size: 16px;
+.sub-header-4 {// Lora 16px semi-bold
+  @include mixins.fastLoraFont(600, 16px);
 }
 
 html,
@@ -46,7 +36,7 @@ body {
   font-size: 16px;
 }
 
-small { // Note: Ask about smallest
+small {
   font-family: "Lora";
   font-weight: 600;
   font-size: 12px;

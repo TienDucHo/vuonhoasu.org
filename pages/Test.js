@@ -8,9 +8,9 @@ export default function Test() {
       <h3 className='sub-header-2'>Đây là h3</h3>
       <h4 className='sub-header-3'>Đây là h4</h4>
       <h5 className='sub-header-4'>Đây là h5</h5>
-      Đây là body.<br/>
-      <small>Đây là small (hoặc smallest)</small>
-      <details>Đây là details</details>
+      <p className='body'>Đây là body.</p>
+      <p className='smallest'>Đây là smallest.</p>
+      <p className='details'>Đây là details.</p>
     </div>
   )
 }

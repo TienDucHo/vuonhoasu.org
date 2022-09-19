@@ -37,22 +37,29 @@ export default function Navbar() {
         {
           clicked && 
           <div className={styles.navBarPhone} ref={dropdown}>
-            <h3 className={styles.title}>Vườn Hoa Sứ</h3>
-            {menuSection.map(section => <h5 className={styles.item} key={section.id}>{section.context}</h5>)}
+            <div className={styles.title}>
+              <div className='sub-header-2'>Vườn Hoa Sứ</div>
+            </div>
+            {menuSection.map(section => 
+            <div className={styles.item} key={section.id}>
+              <div className='sub-header-4'>{section.context}</div>
+            </div>)}
           </div>
         }
         {/* Left section aka logo (Page's name, does it count as logo?)*/}
-        <h3 className={styles.left}>
-          Vườn Hoa Sứ
-        </h3>
+        <div className={styles.left}>
+          <div className='sub-header-2'>Vườn Hoa Sứ</div>
+        </div>
         {/* Right section */}
         <div className={styles.right}>
-            {menuSection.map(section => <h5 key={section.id} className={styles.rightItem}>{section.context}</h5>)}
+            {menuSection.map(section => 
+            <div className={styles.rightItem} key={section.id}>
+              <div className='sub-header-4'>{section.context}</div>
+            </div>)}
             <button type='button' className={styles.rightItemPhone} onClick={e => handleClick(e)}>
               <FaBars size='32px' color='#fbc846'/>
             </button>
         </div>
-        {/* {clicked ? 'true' : 'false'} */}
     </div>
   )
 }

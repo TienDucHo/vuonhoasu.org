@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import Image from 'next/image';
+import { FaBars, IconContext } from 'react-icons/fa';
 
 import styles from './Navbar.module.scss'
 
@@ -49,7 +49,7 @@ export default function Navbar() {
         <div className={styles.right}>
             {menuSection.map(section => <h5 key={section.id} className={styles.rightItem}>{section.context}</h5>)}
             <button type='button' className={styles.rightItemPhone} onClick={e => handleClick(e)}>
-              <Image src='/icons/Bars.svg' alt='button' layout='fill' objectFit='contain'/>
+              <FaBars size='32px' color='#fbc846'/>
             </button>
         </div>
         {/* {clicked ? 'true' : 'false'} */}

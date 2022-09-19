@@ -37,13 +37,13 @@ export default function Navbar() {
         {
           clicked && 
           <div className={styles.navBarPhone} ref={dropdown}>
-            <h3 className={styles.title}>Vườn hoa sứ</h3>
+            <h3 className={styles.title}>Vườn Hoa Sứ</h3>
             {menuSection.map(section => <h5 className={styles.item} key={section.id}>{section.context}</h5>)}
           </div>
         }
         {/* Left section aka logo (Page's name, does it count as logo?)*/}
         <h3 className={styles.left}>
-          Vườn hoa sứ
+          Vườn Hoa Sứ
         </h3>
         {/* Right section */}
         <div className={styles.right}>

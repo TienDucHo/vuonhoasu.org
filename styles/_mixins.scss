@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora'); // Font Lora
+
+@mixin fastLoraFont($weight, $size) { // Note: Will there be exception for line-height...?
+    font-family: 'Lora';
+    font-weight: $weight;
+    font-size: $size;
+    // line-height: $height;
+}
+
+// Note: Do i need to make phone with max-width and min-width or sth...?
+// @mixin phone() {
+//     @media (max-width: 390px) {
+//         @content;
+//     }
+// }

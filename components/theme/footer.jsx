@@ -1,5 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
+
+import { FaFacebook, FaYoutube } from 'react-icons/fa';
 
 import styles from './footer.module.scss'
 
@@ -8,13 +9,15 @@ export default function Footer() {
     <div className={styles.footer}>
       {/* Title */}
       <h5 className={styles.title}> 
-        Vườn hoa sứ
+        Vườn Hoa Sứ
       </h5>
       
       {/* Icon */}
       <div className={styles.iconContainer}>
-        <div className={styles.icon}><Image src='/icons/facebook.svg' alt='facebook' layout='fill' objectFit='contain'/></div>
-        <div className={styles.icon}><Image src='/icons/youtube.svg' alt='facebook' layout='fill' objectFit='contain'/></div>
+        <FaFacebook className={styles.icon}/>
+        <FaYoutube className={styles.icon}/>
+        {/* <div className={styles.icon}><Image src='/icons/facebook.svg' alt='facebook' layout='fill' objectFit='contain'/></div>
+        <div className={styles.icon}><Image src='/icons/youtube.svg' alt='facebook' layout='fill' objectFit='contain'/></div> */}
       </div>
 
       {/* Long text */}

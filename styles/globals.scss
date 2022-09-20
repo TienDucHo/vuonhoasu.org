@@ -22,19 +22,19 @@ a {
   @include mixins.fastLoraFont(700, 32px);
 }
 
-.sub-header { // Lora 28px bold
+.subHeader { // Lora 28px bold
   @include mixins.fastLoraFont(700, 28px);
 }
 
-.sub-header-2 { // Lora 24px bold
+.subHeader2 { // Lora 24px bold
   @include mixins.fastLoraFont(700, 24px);
 }
 
-.sub-header-3 { // Lora 24px semi-bold
+.subHeader3 { // Lora 24px semi-bold
   @include mixins.fastLoraFont(600, 20px);
 }
 
-.sub-header-4 {// Lora 16px semi-bold
+.subHeader4 {// Lora 16px semi-bold
   @include mixins.fastLoraFont(600, 16px);
 }
 

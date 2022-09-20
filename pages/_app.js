@@ -1,4 +1,4 @@
-import Footer from '../components/theme/footer'
+import Footer from '../components/theme/Footer'
 import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps }) {

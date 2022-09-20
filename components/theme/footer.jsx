@@ -2,14 +2,14 @@ import React from 'react'
 
 import { FaFacebook, FaYoutube } from 'react-icons/fa';
 
-import styles from './footer.module.scss'
+import styles from './Footer.module.scss'
 
 export default function Footer() {
   return (
     <div className={styles.footer}>
       {/* Title */}
       <div className={styles.title}> 
-        <div className='sub-header-4'>Vườn Hoa Sứ</div>
+        <div className='subHeader4'>Vườn Hoa Sứ</div>
       </div>
       
       {/* Icon */}

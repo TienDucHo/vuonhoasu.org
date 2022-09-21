@@ -23,7 +23,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.gridContainer}>
           <div className={styles.profilePic}>
-            <Image src={profilePic} width={600} height={600}  />
+            <Image className={styles.profilePicStyling} src={profilePic} width={600} height={600}  />
           </div>
           <div className={styles.secondItem}>
             <div style={{fontSize: "40px", fontWeight : "600"}}>Lạc chân vào</div>

@@ -1,0 +1,51 @@
+@use "/styles/variables" as variables;
+@use "/styles/mixins" as mixins;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Header, body, smallest and details styling
+.header { // Lora 32px bold
+  @include mixins.fastLoraFont(700, 32px);
+}
+
+.subHeader { // Lora 28px bold
+  @include mixins.fastLoraFont(700, 28px);
+}
+
+.subHeader2 { // Lora 24px bold
+  @include mixins.fastLoraFont(700, 24px);
+}
+
+.subHeader3 { // Lora 24px semi-bold
+  @include mixins.fastLoraFont(600, 20px);
+}
+
+.subHeader4 {// Lora 16px semi-bold
+  @include mixins.fastLoraFont(600, 16px);
+}
+
+.body { // Lora 16px regular
+  @include mixins.fastLoraFont(400, 16px);
+}
+
+.smallest { // Lora 12px regular
+  @include mixins.fastLoraFont(400, 12px);
+}
+
+.details {
+  @include mixins.fastLoraFont(400, 14px);
+}

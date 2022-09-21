@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/theme/Footer'
 
 export default function Test() {
   return (

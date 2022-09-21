@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/theme/Navbar'
 
 export default function Test() {
   return (

@@ -1,117 +1,97 @@
-@media only screen and (max-width: 600px) {
-    .container{
-        margin: 2em 0;
-        .block{
-            width: 100%;
-            height: auto;
-        }
-        font-family: Lora;
-        .heading{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            #Header1{
-                font-size: 5vw;
-                margin-bottom: 0.5em;
-                font-weight: 600;
-            }
-            #Header2{
-                font-size: 8vw;
-                font-weight: 700;
-                color: #FBC846;
-                margin-bottom: 1em;
-            }
-        }
+.container{
+    margin: 3em 0;
+    padding: 0 12vw 0 12vw;
+    .block{
+        width: 100%;
+        height: auto;
+    }
+    font-family: Lora;
 
-        .body{
-            padding: 0 12vw 0 12vw;
-            #Header3{
-                font-size: 3.75vw;
-                font-weight: 600;
-            }
-
-            .quote{
-                font-family: 'Font Awesome 5 Free';
-                font-style: normal;
-                font-weight: 900;
-                font-size: 8vw;
-            }
-
-            #OpenQuote{
-                display: flex;
-                flex-direction: column;
-                height: 5vw;
-            }
-
-            #CloseQuote{
-                display: flex;
-                flex-direction: row-reverse;
-            }
-
-            .content{
-                padding: 0 7vw 0 7vw;
-                font-size: 3.3vw;
-            }
-        }
-        
-        .reverseContainer{
-            width: 100%;
-
-            display: flex;
-            flex-direction: row-reverse;
-        }
-
-
-        #Arts{
-            margin-top: 4rem;
-            background-color: #E3C770;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 50%;
-            height: 40vw;
-            width: 40vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+    .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #Header1{
             font-size: 5vw;
+            margin-bottom: 0.5em;
             font-weight: 600;
         }
-
-        
-
-        .container2{
-            width: 100%;
-
-            display: flex;
-
-            #Content{
-                background-color: #F9D185;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 50%;
-                height: 45vw;
-                width: 45vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                font-size: 5vw;
-                font-weight: 600;
-            }
+        #Header2{
+            font-size: 8vw;
+            font-weight: 700;
+            color: #FBC846;
+            margin-bottom: 1em;
         }
+    }
 
-        #Development{
-            background-color: #F3E0B5;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 50%;
-            height: 50vw;
-            width: 50vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-size: 5vw;
-            font-weight: 600;
-        }
-        
+    #Header3, #Header4{
+        font-size: 3.75vw;
+        font-weight: 600;
+    }
+
+    .content{
+        font-size: 3.8vw;
+    }
+
+    .containContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .reverseContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .reverseRowContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .reverseColumnContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .circle{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 600;
+    }
+
+    .containContainer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #Arts{
+        margin-top: 4rem;
+        background-color: #E3C770;
+        height: 40vw;
+        width: 40vw;
+    }
+
+    #Content{
+        background-color: #F9D185;
+        height: 45vw;
+        width: 45vw;
+    }
+    
+    #Development{
+        background-color: #F3E0B5;
+        height: 50vw;
+        width: 50vw;
+    }
+
+    .boundaryContainer{
+        width: 100%;
     }
 }

@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.gridContainer}>
+        <div className={styles.gridContainer1}>
           <div className={styles.profilePic}>
             <Image className={styles.profilePicStyling} src={profilePic} width={600} height={600}  />
           </div>
@@ -29,6 +29,8 @@ export default function Home() {
             <div style={{fontSize: "40px", fontWeight : "600"}}>Lạc chân vào</div>
             <div style={{color: COLORS.base, fontSize: "60px", fontWeight : "600"}}>Vườn Hoa Sứ</div>
           </div>
+        </div>
+        <div className={styles.gridContainer2}>
           <div>
             <div className={styles.headingIcon}><FontAwesomeIcon icon={faFire} /></div>
             <div className={styles.componentTitle}>Đầu truyện mới nhất</div>
@@ -38,10 +40,11 @@ export default function Home() {
               <div style={{color: COLORS.base}} className={styles.sub}>Lễ Đón Học sinh Mới</div>
             </div>
           </div>
+          <div className={styles.dashLine}></div>
           <div>
             <div className={styles.headingIcon}><FontAwesomeIcon icon={faStar} /></div>
             <div className={styles.componentTitle}>Vũ trụ hiện tại</div>
-            <div className={styles.contentBox}>
+            <div className={styles.contentBox} >
               <Image src={profilePic2} />
               <div>Lorem ipsum dolor sit amet</div>
               <div style={{color: COLORS.base}} className={styles.sub}>Lorem ipsum dolor sit amet</div>

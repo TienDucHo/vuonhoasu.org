@@ -1,0 +1,7 @@
+@use "/styles/variables" as variables;
+
+.footer {
+    min-height: 300px;
+
+    background-color: variables.$primary-b;
+}

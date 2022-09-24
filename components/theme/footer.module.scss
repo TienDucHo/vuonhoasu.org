@@ -1,7 +1,45 @@
 @use "/styles/variables" as variables;
 
 .footer {
-    min-height: 300px;
+  min-height: 300px;
 
-    background-color: variables.$primary-b;
+  background-color: variables.$primary-b;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: white;
+
+  .title {
+    color: variables.$accent-g;
+    margin: 6px; // nullify margin of heading
+  }
+
+  .iconContainer {
+    display: flex;
+
+    .icon {
+      margin: 6px;
+      position: relative;
+
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .mainText {
+    margin-top: 6px;
+    margin-bottom: 18px;
+    margin-left: 65px;
+    margin-right: 65px;
+  }
+
+  .subText {
+    margin-top: 18px;
+    margin-left: 38px;
+    margin-right: 38px;
+  }
 }

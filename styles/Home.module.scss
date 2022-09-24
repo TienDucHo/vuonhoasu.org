@@ -35,25 +35,15 @@ $base-color: #FBC846;
   text-align: center;
 }
 
-.componentTitle {
-  padding: 10px 0;
-  font-size: 20px;
-  font-weight: 600;
+.gridContainer1 {
+  display: grid;
 }
 
-.headingIcon {
-  font-size: 20px;
-  width: 20px; 
-  margin-left: 48%;  
-  padding-top: 30px;
-}
-
-.gridContainer {
+.gridContainer2 {
   display: grid;
 }
 
 .contentBox {
-  width: min(100%, 560px);
   border-style: solid;
   border-width: 1px;
   div {
@@ -63,12 +53,22 @@ $base-color: #FBC846;
     margin-bottom: 20px; 
   }
   text-align: center;
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
   font-size: 20px; 
-  margin: 0 20px; 
+  margin: 0 20px;   
 }
 
 @media only screen and (max-width: 900px) {
-  .gridContainer {
+  .gridContainer1 {
+    text-align: center;
+    grid-template-columns: auto;
+  }
+
+  .gridContainer2 {
     text-align: center;
     grid-template-columns: auto;
   }
@@ -81,22 +81,64 @@ $base-color: #FBC846;
 
   .profilePic {
     z-index: -1;
-    opacity: 0.8;
     overflow: hidden;
     position: absolute;
     .profilePicStyling {
       opacity: 0.4;
     }
   }
+
+  .componentTitle {
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .headingIcon {
+    font-size: 20px;
+    width: 20px; 
+    margin-left: 49%;  
+    padding-top: 30px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
-  .gridContainer {
+  .gridContainer1 {
+    grid-template-columns: 2fr 3fr;
     text-align: center;
-    grid-template-columns: auto auto;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
-  .secondItem {
-    vertical-align: middle;
+  .gridContainer2 {
+    grid-template-columns: 5fr 1px 2fr;
+    text-align: center;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .contentBox {
+    background-color: white;
+  }
+
+  .componentTitle {
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+  }
+  
+  .headingIcon {
+    font-size: 20px;
+    width: 20px; 
+    margin-left: 49%; 
+    padding-top: 30px;
+    background-color: white;
+  }
+
+  .dashLine {
+    background-color: #5c5c5c;
   }
 }
